@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <title>Facts</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2><span class="heading">Coronavirus: </span>Mental Health and Wellness!</h2>
+   <nav>
+    <a href="Home.html" >Home</a>
+    <a href="Solutions.html">Solutions</a>
+    <a href="Problems.html">Problems</a>
+    <a href="Facts.html">Facts</a>
+   </nav>
+</div> 
+<div class="main">
+    <p class="container" style="height: 20px;">Even if this project addresses mental health during COVID-19, these are some of the factors that must be considered.
+     Take care of yourself and the loved ones following some simple steps as mentioned below.   
+    </p>
+</div>
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <span class="flexo">
+      <img src="/Coronavirus Icons/PNG/01.png" style="width:50%">
+      <div class="col">
+          <h2 class="heading">Wash Your Hands</h2>
+          <p>Washing hands regularly with medical handwashes whenever you go out or have a 
+              physical contact with anything reduces chances of getting Coronavirus by 80%
+          </p>
+      </div>
+    </span>
+    </div>
+  
+    <div class="mySlides fade">
+        <span class="flexo">
+            <img src="/Coronavirus Icons/PNG/02.png" style="width:50%">
+            <div class="col">
+                <h2 class="heading">Wear Face Mask</h2>
+                <p>Wear your mask regularly whenever you go out. This reduces chances being caught by
+                    Coronavirus. People who wear masks are less likely to suffer from COVID-19.
+                </p>
+            </div>
+          </span>
+    </div>
+  
+    <div class="mySlides fade">
+        <span class="flexo">
+            <img src="/Coronavirus Icons/PNG/03.png" style="width:50%">
+            <div class="col">
+                <h2 class="heading">Use Sanitizer</h2>
+                <p>Using medically prescribed sanitizers will kill all the particles of Coronavirus, if 
+                    present on hands and prevent Coronavirus from entering to the lungs
+                </p>
+            </div>
+          </span>
+    </div>
+    <div class="mySlides fade">
+        <span class="flexo">
+            <img src="/Coronavirus Icons/PNG/05.png" style="width:50%">
+            <div class="col">
+                <h2 class="heading">Practice Social Distancing</h2>
+                <p>Maintaining 6-feet distance from everyone is scientifically proven to be
+                    effective to prevent the spread of COVID-19
+                </p>
+            </div>
+          </span>
+      </div>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+ 
+   <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); 
+    }
+    </script>
+</body>
+</html>
